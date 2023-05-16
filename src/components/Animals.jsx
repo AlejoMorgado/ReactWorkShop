@@ -35,6 +35,7 @@ const Animals = () => {
 
   return (
     <div class="container">
+      <h1>Animals: </h1>
       <h1>{generateAnimal.title}</h1>
       <div class="imageWrapper">
             <img class="animals" src={generateAnimal.src}></img>

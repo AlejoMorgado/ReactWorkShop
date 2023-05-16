@@ -6,7 +6,7 @@ import Animals from './components/Animals';
 function App() {
   return (
     <div className="App">
-      <Character />
+      <Animals />
     </div>
   );
 }
