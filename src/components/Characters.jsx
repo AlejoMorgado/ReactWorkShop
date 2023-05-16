@@ -37,7 +37,6 @@ const Character = () => {
     <div className="characterContainer">
       <div className="screen">
         <img className='character' src={getCharacterImage()} alt="Character" />
-        <h1>Animals</h1>
         <h1>{character.name}</h1>
         <p>GENDER: {character.gender}</p>
         <p>HAIR COLOR: {character.hair_color}</p>
