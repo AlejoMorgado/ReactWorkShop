@@ -1,9 +1,9 @@
 import React from 'react'
-import hipo from './images/hipo.jpg'
-import eagle from './images/eagle.jpg'
-import penguin from './images/penguin.jpg'
-import crocodile from './images/crocodile.jpg'
-import giraffe from './images/giraffe.jpg'
+import hipo from '../images/hipo.jpg'
+import eagle from '../images/eagle.jpg'
+import penguin from '../images/penguin.jpg'
+import crocodile from '../images/crocodile.jpg'
+import giraffe from '../images/giraffe.jpg'
 
 const Animals = () => {
 
@@ -29,8 +29,8 @@ const Animals = () => {
       src: eagle
     },
   ]
-
-  const generateAnimal = animals[Math.floor(Math.random() * animals.length)];
+  const randomIndex = Math.floor(Math.random() * animals.length)
+  const generateAnimal = animals[randomIndex];
 
   return (
     <div>
@@ -41,3 +41,4 @@ const Animals = () => {
 }
 
 export default Animals
+

@@ -1,10 +1,13 @@
-import './App.css';
-import Animals from './Animals';
+import './styles/App.css';
+// import Animals from './Animals';
+import Animals from './components/Animals';
+import Character from './components/Characters';
+
 
 function App() {
   return (
     <div className="App">
-      <Animals/>
+      <Character />
     </div>
   );
 }
