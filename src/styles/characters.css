@@ -1,0 +1,58 @@
+.character {
+  top: 0;
+  left: 0;
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+}
+.screen > h1{
+  color: #FFE81F;
+}
+.screen {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 20px;
+  position: relative;
+  width: 25vw;
+  height: 50vh;
+  border: 3px solid;
+  border-radius: 1rem;
+  background-color: rgba(62, 99, 155, 0.425);
+  overflow: hidden;
+}
+
+.screen-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    rgba(46, 158, 233, 0.15),
+    rgba(46, 158, 233, 0.15) 3px,
+    transparent 3px,
+    transparent 9px
+  );
+  background-size: 100% 9px;
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  animation: pan-overlay 10s linear infinite;
+  background-position: 0% 0%;
+  z-index: 2;
+}
+
+@keyframes pan-overlay {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 0% -100%;
+  }
+}
+
+.characterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

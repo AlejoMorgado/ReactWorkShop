@@ -1,7 +1,6 @@
 import './styles/App.css';
-// import Animals from './Animals';
-import Animals from './components/Animals';
 import Character from './components/Characters';
+import Animals from './components/Animals';
 
 
 function App() {

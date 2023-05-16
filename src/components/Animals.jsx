@@ -1,4 +1,5 @@
 import React from 'react'
+import '../styles/Animals.css'
 import hipo from '../images/hipo.jpg'
 import eagle from '../images/eagle.jpg'
 import penguin from '../images/penguin.jpg'
@@ -33,10 +34,13 @@ const Animals = () => {
   const generateAnimal = animals[randomIndex];
 
   return (
-    <div>
+    <div class="container">
       <h1>{generateAnimal.title}</h1>
-      <img src={generateAnimal.src}></img>
+      <div class="imageWrapper">
+            <img class="animals" src={generateAnimal.src}></img>
+      </div>
     </div>
+
   )
 }
 
